@@ -6,7 +6,7 @@ Code name here
 
 
 ## Abstract
-Our main question is "How do speed disparities in internet service offers relate to socioeconomic disparities?" We are interested in answering this question to explore the effects of practices like redlining on something seemingly unrelated - our Internet. To address this question, we will investigate the connections between internet speeds and neighborhoods of varying backgrounds. 
+Our main question is "How do speed disparities in internet service offers relate to socioeconomic disparities?" We are interested in answering this question to explore the effects of practices like redlining on something seemingly unrelated - our Internet. To address this question, we will investigate the connections between internet speeds and various neighborhoods with different race, income, and population distributions. 
 
 ## Keywords
 

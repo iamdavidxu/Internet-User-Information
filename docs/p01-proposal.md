@@ -22,7 +22,7 @@ Internet, Redlining, Income distributions, Regression, Exploratory data analysis
 ## Problem Domain
 
 ## Research Questions
-1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals?
+1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
 
 ## The Dataset
 Data file name | Purpose | # of Observations | # of Variables | Citation

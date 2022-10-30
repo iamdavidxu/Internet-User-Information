@@ -20,9 +20,29 @@ Internet, Redlining, Income distributions, Regression, Exploratory data analysis
 ## Introduction
 
 ## Problem Domain
+Background: 
+    The appearance of Covid-19 led to a great number of issues in society, both economically, patricianly, and socially. Accordingly to the article “New data shows long Covid is keeping as many as 4 million people out of work” by Katie Bach in 2022 from Pew Brookings, the virus significantly shrinks the economy and causes people to rely on technology and the Internet.1 This increase in demand accordingly increases the providence of internet services. In the dataset “Internet Service Offers” created by Leon Yin and Aaron Sankin, we can see the address and internet speed of over a million houses serviced in the US, and this is only a portion of the overall services provided during the pandemic.4 This great amount of demand and increase in internet service, however, brought out the existing economic and social inequality. It appears that the majority of the population receiving good internet services are white and high-income groups. In the contrast, the lower-income group and non-white population tend to receive slower or no internet access. As the economy deteriorates during the pandemic, the employment rate decreased greatly and the demand for working remotely increased. This stimulates people to choose better service plans with faster speed and conditions. However, lower-income groups usually don’t have the access to ‘blazing’ internet speed due to financial issues. It appears that the location and different regions people live in also influence the service they get. As major cities have faster internet, rural areas or not developed regions use slower options. The authors utilized multiple variables to sort and distribute the data they collected. Mainly focusing on races and ethnicities, speeds, redline areas, and income. Through using these categories, the readers are able to understand the inequality distribution more directly and clearly. 
+
+Direct and indirect stakeholders:
+    The users of the internet services are mostly students or working classmen. Therefore the direct stakeholders for this information will be people who need internet access and use technology devices regularly. The assumption is that they have basic skills in computing and using electronic devices. They are likely to use the internet for working, learning as well as communication. While there could be many values stakeholders hold, the major ones are likely to be benefiting others, creating better solutions, and so on. The indirect stakeholders can be the government and business owners. The federal sometimes proposes policies that assist people in need with the internet. One of the programs created in 2021 is the Affordable Connectivity Program.2 According to the official website of the Federal Communication Commission and the article “Yes, FCC Affordable Connectivity Program’s $30 discount is real” by Emery Winter in August 2021, the government provides discounts on internet services to assist the lower-income population. Business owners' profits could be influenced by the accessibility of the internet. 
+
+Human Values:
+    The social inequality presented through the data is not only an economical issue but an ethical problem. It has been shown that racism is also a factor that creates the social and economic gap and tension between different communities. 3Accordingly to the article “U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete” by Rakesh Kochhar and Jesse Bennett from Pew Research Center,  there is discrimination towards different gender as well as identity. It is crucial for us to address these problems and prevent them from deteriorating relationships between different groups. 
+
+Potential benefits and Harms:
+    The benefits of using this dataset are to analyze the service in different areas to create better solutions and records of the social status. These data could be very beneficial for providing useful information. It could be used to create solutions and improve people’s standards, in addition to accessibility to the internet. The potential harm this dataset might cause could be increasing the tension between the high and low-income groups. The publication of this information could lead to dissatisfaction or discrimination which will both create damage to society. (Sustain ‘Friendship’ in the envisioning card)
+
+Influence on other fields:
+    This dataset can be used in political studies, social studies, and many other fields. When preparing for elections or political events, this data could be a good reference for creating promotion strategies to gather votes. It could also be used by the government to determine which area to develop in the future.
 
 ## Research Questions
 1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
+
+2. (David) How does the disparity in internet speed reflect the economy and social inequality between white and minorities? 
+The large increase in demand for the internet deteriorates the economic gap between different social classes and communities. Unemployment significantly increases due to the pandemic which keeps high-income groups and reduces the number of low-income employees. As high-income classes receive more access to faster internet, poorer communities tend to receive slower internet. It is also shown that white people usually enroll in higher-income jobs while the non-white population receives lower wages. These ideas have also been reflected in the data collected.
+
+3. (David) To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
+As the pandemic hits, the demand for more efficient internet access and usage increases. However as the economy deteriorates, the accessibility to the internet becomes undetermined. Since people weren’t able to afford bills, rural areas or regions with poor conditions couldn’t receive internet access. Thus creating an imbalance between different areas. This gap continues to increase as wealthier become richer and the poor remains poor. This information has also been presented in the dataset, the researchers use redlines to separate regions with different economic conditions. 
 
 ## The Dataset
 
@@ -62,4 +82,11 @@ Sankin, A., & Yin, L. (2022d). speed_price_earthlink [Data set]. In Github. http
 
 Sankin, A., & Yin, L. (2022e). speed_price_verizon [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_verizon.csv.gz
 
+Problem domain references
+1. Bach, K. (2022, August 24). New data shows long covid is keeping as many as 4 million people out of work. Brookings. Retrieved October 30, 2022, from https://www.brookings.edu/research/new-data-shows-long-covid-is-keeping-as-many-as-4-million-people-out-of-work/ 
 
+2. Winter, A. E. (2022, August 24). Yes, FCC affordable connectivity program's $30 discount is real. verifythis.com. Retrieved October 30, 2022, from https://www.verifythis.com/article/news/verify/money-verify/fcc-affordable-connectivity-program-30-dollar-internet-discount-real/536-c1de0bfb-4545-43bc-9bd8-4219d6b9f040 
+
+3. Kochhar, R., &amp; Bennett, J. (2021, April 14). U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete. Pew Research Center. Retrieved October 30, 2022, from https://www.pewresearch.org/fact-tank/2021/04/14/u-s-labor-market-inches-back-from-the-covid-19-shock-but-recovery-is-far-from-complete/ 
+
+4. Bryant, M. (2022, October 26). Internet service offers dataset. Kaggle. Retrieved October 30, 2022, from https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices?resource=download&amp;select=speed_price_att.csv 

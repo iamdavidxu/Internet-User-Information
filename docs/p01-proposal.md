@@ -25,6 +25,9 @@ Internet, Redlining, Income distributions, Regression, Exploratory data analysis
 1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
 
 ## The Dataset
+
+Our dataset summarizes the disparities in internet service speeds and prices in different neighborhoods based on racial and economic makeup as well as redlining status. The connections presented in these datasets inform us on how big-name internet service providers disproportionately offer slower internet services to lower-income, BIPOC communities for the same price as faster services in higher-income communities with more white populations. 
+
 Data file name | Purpose | # of Observations | # of Variables | Citation
 ---------------|---------|-------------------|----------------|----------
 speed_price_att| AT&T Data Part 1 | 432,304 | 26 | Sankin, A., & Yin, L. (2022a). speed_price_att [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_att.csv.gz

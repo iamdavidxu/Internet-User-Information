@@ -6,7 +6,7 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 # Internet Services and Income Disparities
 
 **We need to come up with a code name**
-## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (---), and David Xu (---)
+## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (aidanb04@uw.edu), and David Xu (---)
 ### INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 ### Autumn 2022
 ------------------------------------
@@ -44,6 +44,8 @@ The large increase in demand for the internet deteriorates the economic gap betw
 3. (David) To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
 As the pandemic hits, the demand for more efficient internet access and usage increases. However as the economy deteriorates, the accessibility to the internet becomes undetermined. Since people weren’t able to afford bills, rural areas or regions with poor conditions couldn’t receive internet access. Thus creating an imbalance between different areas. This gap continues to increase as wealthier become richer and the poor remains poor. This information has also been presented in the dataset, the researchers use redlines to separate regions with different economic conditions. 
 
+4. (Aidan) How does the price of internet vary across America as a whole: are rural areas more expensive than cities or do redlined areas in cities cause the average price per city to stay higher? This information will reveal just how impactful redlining is to the average cost of living in a city and specifically internet prices. It will also help with seeing if internet service companies do their own sort of redlining where they know they can drive up prices and people will sill pay them; for example if they know they can inflate prices in rural areas since there are no other options. It will be interesting to see if the areas with less internet company competition have higher prices than places where there are more options for internet.
+
 ## The Dataset
 
 Our dataset summarizes the disparities in internet service speeds and prices in different neighborhoods based on racial and economic makeup as well as redlining status. The connections presented in these datasets inform us on how big-name internet service providers disproportionately offer slower internet services to lower-income, BIPOC communities for the same price as faster services in higher-income communities with more white populations. 
@@ -66,7 +68,9 @@ To avoid nonrepresentative results, the team took the COVID-19 pandemic into con
 We found this dataset through *Kaggle*, a community repository with numerous datasets organized into various categories. Though this dataset has been reshared on *Kaggle*, it was originally hosted by The Markup on *Github*, which we credit as the source of our data.
 
 
-## Expected Limitations
+## Expected Implications
+By answering our proposed research questions, we will have a much better understanding of to what extent internet service providers are manipulating prices unnecessarily in places where they know they can get away with it, which increases the socio-economic seperation between class groups, which reinforces stereotypes and thoughts about certain areas in the United States such as redlining. We will be able to know whether or not internet service providers should be held partially responsible for maintaining the notion that redlined areas are somehow "worse" than other areas close by. Policy makers could use this data to potentially hold internet service providers accountable for price-gouging people in lower income areas. Urban designers could use this information to design areas similar to internet cafes in places where the internet is cheaper, where people who live in the redlined expensive areas can go to and use the internet at a more affordable rate. A technological possibility would be to create a service which would act as a VPN so people in redlined areas could simply purchase their internet at a cheaper rate, as if they lived across town in a non-redlined area.
+
 
 ## Limitations
 

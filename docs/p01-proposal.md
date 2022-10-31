@@ -1,12 +1,7 @@
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically: 
-
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
-
 # Internet Services and Income Disparities
 
-**We need to come up with a code name**
-## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (aidanb04@uw.edu), and David Xu (---)
+**Code name: Robin-Hood**
+## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (aidanb04@uw.edu), and David Xu (bingsen@uw.edu)
 ### INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 ### Autumn 2022
 ------------------------------------
@@ -37,15 +32,15 @@ Influence on other fields:
     This dataset can be used in political studies, social studies, and many other fields. When preparing for elections or political events, this data could be a good reference for creating promotion strategies to gather votes. It could also be used by the government to determine which area to develop in the future.
 
 ## Research Questions
-1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
+1. Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
 
-2. (David) How does the disparity in internet speed reflect the economy and social inequality between white and minorities? 
+2. How does the disparity in internet speed reflect the economy and social inequality between white and minorities? 
 The large increase in demand for the internet deteriorates the economic gap between different social classes and communities. Unemployment significantly increases due to the pandemic which keeps high-income groups and reduces the number of low-income employees. As high-income classes receive more access to faster internet, poorer communities tend to receive slower internet. It is also shown that white people usually enroll in higher-income jobs while the non-white population receives lower wages. These ideas have also been reflected in the data collected.
 
-3. (David) To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
+3. To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
 As the pandemic hits, the demand for more efficient internet access and usage increases. However as the economy deteriorates, the accessibility to the internet becomes undetermined. Since people weren’t able to afford bills, rural areas or regions with poor conditions couldn’t receive internet access. Thus creating an imbalance between different areas. This gap continues to increase as wealthier become richer and the poor remains poor. This information has also been presented in the dataset, the researchers use redlines to separate regions with different economic conditions. 
 
-4. (Aidan) How does the price of internet vary across America as a whole: are rural areas more expensive than cities or do redlined areas in cities cause the average price per city to stay higher? This information will reveal just how impactful redlining is to the average cost of living in a city and specifically internet prices. It will also help with seeing if internet service companies do their own sort of redlining where they know they can drive up prices and people will sill pay them; for example if they know they can inflate prices in rural areas since there are no other options. It will be interesting to see if the areas with less internet company competition have higher prices than places where there are more options for internet.
+4. How does the price of internet vary across America as a whole: are rural areas more expensive than cities or do redlined areas in cities cause the average price per city to stay higher? This information will reveal just how impactful redlining is to the average cost of living in a city and specifically internet prices. It will also help with seeing if internet service companies do their own sort of redlining where they know they can drive up prices and people will sill pay them; for example if they know they can inflate prices in rural areas since there are no other options. It will be interesting to see if the areas with less internet company competition have higher prices than places where there are more options for internet.
 
 ## The Dataset
 
@@ -79,6 +74,12 @@ One limitation that will need to be addressed in some way is the fact that there
 
 ## References
 
+Bach, K. (2022, August 24). New data shows long covid is keeping as many as 4 million people out of work. Brookings. Retrieved October 30, 2022, from https://www.brookings.edu/research/new-data-shows-long-covid-is-keeping-as-many-as-4-million-people-out-of-work/ 
+
+Bryant, M. (2022, October 26). Internet service offers dataset. Kaggle. Retrieved October 30, 2022, from https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices?resource=download&amp;select=speed_price_att.csv 
+
+Kochhar, R., &amp; Bennett, J. (2021, April 14). U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete. Pew Research Center. Retrieved October 30, 2022, from https://www.pewresearch.org/fact-tank/2021/04/14/u-s-labor-market-inches-back-from-the-covid-19-shock-but-recovery-is-far-from-complete/ 
+
 Sankin, A., & Yin, L. (2022a). speed_price_att [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_att.csv.gz
 
 Sankin, A., & Yin, L. (2022b). speed_price_att_other_cities [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_att_other_cities.csv.gz
@@ -89,11 +90,5 @@ Sankin, A., & Yin, L. (2022d). speed_price_earthlink [Data set]. In Github. http
 
 Sankin, A., & Yin, L. (2022e). speed_price_verizon [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_verizon.csv.gz
 
-Problem domain references
-1. Bach, K. (2022, August 24). New data shows long covid is keeping as many as 4 million people out of work. Brookings. Retrieved October 30, 2022, from https://www.brookings.edu/research/new-data-shows-long-covid-is-keeping-as-many-as-4-million-people-out-of-work/ 
 
-2. Winter, A. E. (2022, August 24). Yes, FCC affordable connectivity program's $30 discount is real. verifythis.com. Retrieved October 30, 2022, from https://www.verifythis.com/article/news/verify/money-verify/fcc-affordable-connectivity-program-30-dollar-internet-discount-real/536-c1de0bfb-4545-43bc-9bd8-4219d6b9f040 
-
-3. Kochhar, R., &amp; Bennett, J. (2021, April 14). U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete. Pew Research Center. Retrieved October 30, 2022, from https://www.pewresearch.org/fact-tank/2021/04/14/u-s-labor-market-inches-back-from-the-covid-19-shock-but-recovery-is-far-from-complete/ 
-
-4. Bryant, M. (2022, October 26). Internet service offers dataset. Kaggle. Retrieved October 30, 2022, from https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices?resource=download&amp;select=speed_price_att.csv 
+Winter, A. E. (2022, August 24). Yes, FCC affordable connectivity program's $30 discount is real. verifythis.com. Retrieved October 30, 2022, from https://www.verifythis.com/article/news/verify/money-verify/fcc-affordable-connectivity-program-30-dollar-internet-discount-real/536-c1de0bfb-4545-43bc-9bd8-4219d6b9f040 

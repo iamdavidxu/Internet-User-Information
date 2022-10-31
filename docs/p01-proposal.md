@@ -73,6 +73,8 @@ By answering our proposed research questions, we will have a much better underst
 
 
 ## Limitations
+One limitation that will need to be addressed in some way is the fact that there are a large number of NULL values in the redlining_grade column of each csv file. The NULL percentages of the redlining_grade for each file are as follows: _att_ has a 57%, _att_other_cities_ has a 44%, _centurylink_ has a 70%, _earthlink_ has a 60%, and _verizon_ has a 25%. Since this column of data is important for the conclusions that we are trying to make, much of the data will need to be excluded by <code>na.rm = TRUE<code> so we are able to actually work with our dataset and come to some kind of conclusion. A technological limitation that we also currently have is that we would like to make an interactive data visualization using maps and the data, but we simply do not know how to code that yet. We will work on learning more about how to actually build interactove data visualizations, but currently that is a limitation that will impact how useful our report is.  
+
 
 ## References
 

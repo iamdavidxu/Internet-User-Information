@@ -1,6 +1,6 @@
 # Internet Services and Income Disparities
 
-**Code name: **
+**Code name: Internet-Redlining**
 ## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (aidanb04@uw.edu), and David Xu (bingsen@uw.edu)
 ### INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 ### Autumn 2022

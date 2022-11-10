@@ -1,12 +1,7 @@
-For what to do, see the [`../instructions/`](../instructions/) directory, specifically: 
-
-* [Design Brief](../instructions/project-design-brief.pdf)
-* [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
-
 # Internet Services and Income Disparities
 
-**We need to come up with a code name**
-## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (---), and David Xu (---)
+**Code name: Internet-Redlining**
+## By Neha Venkatesh (nehav22@uw.edu), Aidan Bartlett (aidanb04@uw.edu), and David Xu (bingsen@uw.edu)
 ### INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 ### Autumn 2022
 ------------------------------------
@@ -18,6 +13,7 @@ Our main question is "How do speed disparities in internet service offers relate
 Internet, Redlining, Income distributions, Regression, Exploratory data analysis
 
 ## Introduction
+For this project we plan on exploring the relationship between internet service speed and prices in different areas across the United States, and how different internet service providers redline certain areas to essentially price-gouge lower income areas. During the Covid-19 pandemic, people were forced to remain online for a much more extensive amount of time than ever before, and this lead to internet service providers increasing prices to maximize profits. Lower-income areas often have high prices for low internet speeds, something that is completely unnecessary and only goes to further the socioeconomic differences in major cities and the United States as a whole.  The data we are using for this project is hosted  on [kaggle](https://www.kaggle.com/datasets) and has five data files with information on four different internet service companies. We will compare the companies to determine which are being the most equitable, and which should be held accountable for the situations they are creating.
 
 ## Problem Domain
 Background: 
@@ -36,13 +32,15 @@ Influence on other fields:
     This dataset can be used in political studies, social studies, and many other fields. When preparing for elections or political events, this data could be a good reference for creating promotion strategies to gather votes. It could also be used by the government to determine which area to develop in the future.
 
 ## Research Questions
-1. (Neha) Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
+1. Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining, and considering the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city.
 
-2. (David) How does the disparity in internet speed reflect the economy and social inequality between white and minorities? 
+2. How does the disparity in internet speed reflect the economy and social inequality between white and minorities? 
 The large increase in demand for the internet deteriorates the economic gap between different social classes and communities. Unemployment significantly increases due to the pandemic which keeps high-income groups and reduces the number of low-income employees. As high-income classes receive more access to faster internet, poorer communities tend to receive slower internet. It is also shown that white people usually enroll in higher-income jobs while the non-white population receives lower wages. These ideas have also been reflected in the data collected.
 
-3. (David) To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
+3. To what extent do internet speed disparities in different regions increase the social gap and economic inequality? 
 As the pandemic hits, the demand for more efficient internet access and usage increases. However as the economy deteriorates, the accessibility to the internet becomes undetermined. Since people weren’t able to afford bills, rural areas or regions with poor conditions couldn’t receive internet access. Thus creating an imbalance between different areas. This gap continues to increase as wealthier become richer and the poor remains poor. This information has also been presented in the dataset, the researchers use redlines to separate regions with different economic conditions. 
+
+4. How does the price of internet vary across America as a whole: are rural areas more expensive than cities or do redlined areas in cities cause the average price per city to stay higher? This information will reveal just how impactful redlining is to the average cost of living in a city and specifically internet prices. It will also help with seeing if internet service companies do their own sort of redlining where they know they can drive up prices and people will sill pay them; for example if they know they can inflate prices in rural areas since there are no other options. It will be interesting to see if the areas with less internet company competition have higher prices than places where there are more options for internet.
 
 ## The Dataset
 
@@ -66,11 +64,21 @@ To avoid nonrepresentative results, the team took the COVID-19 pandemic into con
 We found this dataset through *Kaggle*, a community repository with numerous datasets organized into various categories. Though this dataset has been reshared on *Kaggle*, it was originally hosted by The Markup on *Github*, which we credit as the source of our data.
 
 
-## Expected Limitations
+## Expected Implications
+By answering our proposed research questions, we will have a much better understanding of to what extent internet service providers are manipulating prices unnecessarily in places where they know they can get away with it, which increases the socioeconomic seperation between class groups, which reinforces stereotypes and thoughts about certain areas in the United States such as redlining. We will be able to know whether or not internet service providers should be held partially responsible for maintaining the notion that redlined areas are somehow "worse" than other areas close by. Policy makers could use this data to potentially hold internet service providers accountable for price-gouging people in lower income areas. Urban designers could use this information to design areas similar to internet cafes in places where the internet is cheaper, where people who live in the redlined expensive areas can go to and use the internet at a more affordable rate. A technological possibility would be to create a service which would act as a VPN so people in redlined areas could simply purchase their internet at a cheaper rate, as if they lived across town in a non-redlined area.
+
 
 ## Limitations
+One limitation that will need to be addressed in some way is the fact that there are a large number of NULL values in the redlining_grade column of each csv file. The NULL percentages of the redlining_grade for each file are as follows: _att_ has a 57%, _att_other_cities_ has a 44%, _centurylink_ has a 70%, _earthlink_ has a 60%, and _verizon_ has a 25%. Since this column of data is important for the conclusions that we are trying to make, much of the data will need to be excluded by na.rm = TRUE so we are able to actually work with our dataset and come to some kind of conclusion. A technological limitation that we also currently have is that we would like to make an interactive data visualization using maps and the data, but we simply do not know how to code that yet. We will work on learning more about how to actually build interactove data visualizations, but currently that is a limitation that will impact how useful our report is.  
+
 
 ## References
+
+Bach, K. (2022, August 24). New data shows long covid is keeping as many as 4 million people out of work. Brookings. Retrieved October 30, 2022, from https://www.brookings.edu/research/new-data-shows-long-covid-is-keeping-as-many-as-4-million-people-out-of-work/ 
+
+Bryant, M. (2022, October 26). Internet service offers dataset. Kaggle. Retrieved October 30, 2022, from https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices?resource=download&amp;select=speed_price_att.csv 
+
+Kochhar, R., &amp; Bennett, J. (2021, April 14). U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete. Pew Research Center. Retrieved October 30, 2022, from https://www.pewresearch.org/fact-tank/2021/04/14/u-s-labor-market-inches-back-from-the-covid-19-shock-but-recovery-is-far-from-complete/ 
 
 Sankin, A., & Yin, L. (2022a). speed_price_att [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_att.csv.gz
 
@@ -82,11 +90,5 @@ Sankin, A., & Yin, L. (2022d). speed_price_earthlink [Data set]. In Github. http
 
 Sankin, A., & Yin, L. (2022e). speed_price_verizon [Data set]. In Github. https://github.com/the-markup/investigation-isp/blob/main/data/output/speed_price_verizon.csv.gz
 
-Problem domain references
-1. Bach, K. (2022, August 24). New data shows long covid is keeping as many as 4 million people out of work. Brookings. Retrieved October 30, 2022, from https://www.brookings.edu/research/new-data-shows-long-covid-is-keeping-as-many-as-4-million-people-out-of-work/ 
 
-2. Winter, A. E. (2022, August 24). Yes, FCC affordable connectivity program's $30 discount is real. verifythis.com. Retrieved October 30, 2022, from https://www.verifythis.com/article/news/verify/money-verify/fcc-affordable-connectivity-program-30-dollar-internet-discount-real/536-c1de0bfb-4545-43bc-9bd8-4219d6b9f040 
-
-3. Kochhar, R., &amp; Bennett, J. (2021, April 14). U.S. labor market inches back from the COVID-19 shock, but recovery is far from complete. Pew Research Center. Retrieved October 30, 2022, from https://www.pewresearch.org/fact-tank/2021/04/14/u-s-labor-market-inches-back-from-the-covid-19-shock-but-recovery-is-far-from-complete/ 
-
-4. Bryant, M. (2022, October 26). Internet service offers dataset. Kaggle. Retrieved October 30, 2022, from https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices?resource=download&amp;select=speed_price_att.csv 
+Winter, A. E. (2022, August 24). Yes, FCC affordable connectivity program's $30 discount is real. verifythis.com. Retrieved October 30, 2022, from https://www.verifythis.com/article/news/verify/money-verify/fcc-affordable-connectivity-program-30-dollar-internet-discount-real/536-c1de0bfb-4545-43bc-9bd8-4219d6b9f040 

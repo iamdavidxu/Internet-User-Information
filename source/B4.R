@@ -3,7 +3,7 @@ library(ggplot2)
 library(tidyr)
 
 
-##Pie chart for Low income
+##4 Pie charts for Internet speeds per household income levels
 
 income_disparities <- read.csv("https://raw.githubusercontent.com/the-markup/investigation-isp/main/data/output/figs/fig3_income.csv")
 #View(income_disparities)
@@ -55,11 +55,3 @@ ggplot(transposed_income_disparities, aes(x ="", y = Upper, fill = internet_spee
   geom_text(aes(label = Upper),
             position = position_stack(vjust = 0.5))+
   coord_polar(theta = "y") 
-
-
-##This data visualization includes four pie charts that show the internet speed of households 
-##based on their income level. There is one pie chart for lower income households, one for 
-##middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization
-##because it allows viewers to easily understand the disparities in internet speeds between household 
-##income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing
-##for this purpose so that the differing speed levels can be easily perceived. 

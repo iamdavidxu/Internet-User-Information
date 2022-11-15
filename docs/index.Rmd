@@ -8,6 +8,8 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+source()
+library(knitr)
 
 ## Overview
 This is a brief report regarding internet redlining for interent services provided by AT&T specifically based on data from a study conducted by _The MarkUp_. This report explores relationships between different socio-economic disparities such as race and household income with speed and price of internet services. ([source](https://github.com/the-markup/investigation-isp)).

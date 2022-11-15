@@ -4,16 +4,8 @@
 ## I pushed the cvs files on github repo, run the line and click on the file to read it :).
 
 
-ATT_price <- read.csv(file.choose())
+ATT_price <- read.csv("../data/speed_price_att.csv.gz")
 #att
-ATT_other_price <- read.csv(file.choose())
-#attother
-Centurylink_price <- read.csv(file.choose())
-#centurylink
-Earthlink_price <- read.csv(file.choose())
-#earthlink
-Verizon_price <- read.csv(file.choose())
-#Verizon
 
 
 
@@ -35,7 +27,6 @@ locations_with_lowest_Redling_Grade_ATT <- ATT_price %>%
   summarise(location = unique(location))
 
 
-===+=
 lowest_speed_in_non_white_location_ATT <- ATT_price %>% 
   select(race_perc_non_white, speed_down, location) %>% 
   filter(race_perc_non_white == max(race_perc_non_white , na.rm = TRUE), 
@@ -62,8 +53,7 @@ data_in_la <- ATT_price %>%
 na.omit(data_in_la)
 View(data_in_la)
 
-## This table analyze the Internet condition in LA. it includes the race percentage and redlining grade in contrast 
-## to Internet speed which present the economic inbalance in different regions. 
+## This table analyze the Internet condition in LA. 
 
 
 data_in_nation <- ATT_price %>% 
@@ -82,7 +72,8 @@ na.omit(data_in_nation)
 View(data_in_nation)
 
 
-## The data of mean Internet record on national level. The data is categorize by state. 
+## The data of mean Internet record on national level. The data is categorize by state.It includes the race percentage and redlining grade in contrast 
+## to Internet speed which present the economic imbalance in different regions. 
 
 ## The actual table
 

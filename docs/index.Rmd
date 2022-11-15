@@ -5,13 +5,15 @@ date: "11/13/2022"
 output: html_document
 ---
 
-source()
-library(knitr)
 
+library(knitr)
+```{r}
+library("tidyverse")
+library("plotly")
+```
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
 
 ## Overview
 This is a brief report regarding internet redlining for interent services provided by AT&T specifically based on data from a study conducted by _The MarkUp_. This report explores relationships between different socio-economic disparities such as race and household income with speed and price of internet services. ([source](https://github.com/the-markup/investigation-isp)).
@@ -21,44 +23,59 @@ The data reveals that the maximum download speed provided by AT&T was 'r max_dow
 Here are the locations which experienced the lowest internet redlining by AT&T 'r locations_with_lowest_Redlining_Grade_ATT'. 
 
 
-## Internet speed distributions by household income
-To visually identify disparities in internet speeds by household income, here are four pie charts displaying internet speed distributions for each household income level separately:
-```{r pressure, echo=FALSE}
-plot(B4)
-```
-
-This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 
-
-
 
 * Please see Canvas for more details.
 
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
+## Data_summary_in_nation
+Here is the mean data of AT&T group by state.
+
 ```{r}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/data_access.R")
-data_access_test()
+source("../source/B3.R")
+data_in_nation
 ```
 
-### Example 2: Initialize a variable and then use it
-```{r}
-# Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
+The data of mean Internet record on national level. The data is categorize by state.It includes the race percentage and redlining grade in contrast to Internet speed which present the economic imbalance in different regions. This chart implies the inequality treatment and economic gap in different regions.
+
+## Type of internet most often used
+
+This pie chart shows the distributions of the different kinds of internet most used: Copper, Fiber, Fiber Based, Not Fiber. 
+
+
+```{r, ECHO = TRUE}
+
+##source("../source/InternetTypesPieCart.R")
+
+##pie_total
 ```
 
-> `r msg` Hope you have a good day!! 
+This chart shows the distribution of the types of internet used across America. In the future, we will have this data be able to be segmented by state, so users can choose a state that they want to inspect. 
 
-## ABOUT THIS FILE: 
+(The graph will not show up since our CSV data cannot be read. We will ask about that issue in section)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+## Internet speed for each provider
+Here's a barchart showing the up and download speed:
+```{r, ECHO = FALSE}
+source("../source/UpDownLoadSpeed.R")
+ISP_Speeds_plot
 ```
+This chart is a bar chart that, based on who the provider is, shows the average upload and download speed across all the data we have. This chart is also interactive, when you hover over each column, you can see the exact upload and download speed. This chart allows users to see which Internet Service Providers (ISPs) have the fastest average internet.
+
+
+## Internet speed distributions by household income
+To visually identify disparities in internet speeds by household income, here are four pie charts displaying internet speed distributions for each household income level separately:
+
+
+```{r, ECHO = FALSE}
+
+source("../source/B4.R")
+a
+b
+c
+d
+```
+This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 
+
+
 
 

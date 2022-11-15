@@ -29,29 +29,30 @@ transposed_income_disparities$internet_speeds <- speeds
 
 
 #create pie chart for low income
-ggplot(transposed_income_disparities, aes(x ="", y = Low, fill = internet_speeds)) +
+a <- ggplot(transposed_income_disparities, aes(x ="", y = Low, fill = internet_speeds)) +
   geom_col(color = "black") +
   geom_text(aes(label = Low),
       position = position_stack(vjust = 0.5))+
   coord_polar(theta = "y") 
 
 #create pie chart for middle-lower income
-ggplot(transposed_income_disparities, aes(x ="", y = Middle_lower, fill = internet_speeds)) +
+b <- ggplot(transposed_income_disparities, aes(x ="", y = Middle_lower, fill = internet_speeds)) +
   geom_col(color = "black") +
   geom_text(aes(label = Middle_lower),
             position = position_stack(vjust = 0.5))+
   coord_polar(theta = "y") 
 
 #create pie chart for middle_upper income
-ggplot(transposed_income_disparities, aes(x ="", y = Middle_upper, fill = internet_speeds)) +
+c <- ggplot(transposed_income_disparities, aes(x ="", y = Middle_upper, fill = internet_speeds)) +
   geom_col(color = "black") +
   geom_text(aes(label = Middle_upper),
             position = position_stack(vjust = 0.5))+
   coord_polar(theta = "y") 
 
 #create pie chart for upper income
-ggplot(transposed_income_disparities, aes(x ="", y = Upper, fill = internet_speeds)) +
+d <- ggplot(transposed_income_disparities, aes(x ="", y = Upper, fill = internet_speeds)) +
   geom_col(color = "black") +
   geom_text(aes(label = Upper),
             position = position_stack(vjust = 0.5))+
   coord_polar(theta = "y") 
+

@@ -14,6 +14,7 @@ Verizon_price <- read.csv(file.choose())
   #Verizon
 
 
+
 ## Packages
 
 install.packages("dplyr")
@@ -42,7 +43,8 @@ Income_ATT <- ATT_price %>%
   summarise(location, income_dollars_below_median)
 
 ATT_price <- ATT_price %>%
-  mutate(location)
+  mutate(location = paste0(incorporated_place,", ", major_city , ", " , state))
+View(ATT_price)
 
 
 locations_with_lowest_Redling_Grade_ATT <- ATT_price %>% 

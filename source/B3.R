@@ -35,7 +35,7 @@ locations_with_lowest_Redling_Grade_ATT <- ATT_price %>%
   summarise(location = unique(location))
 
 
-
+===+=
 lowest_speed_in_non_white_location_ATT <- ATT_price %>% 
   select(race_perc_non_white, speed_down, location) %>% 
   filter(race_perc_non_white == max(race_perc_non_white , na.rm = TRUE), 
@@ -70,7 +70,7 @@ data_in_nation <- ATT_price %>%
   select(state , location, fastest_speed_down, fastest_speed_price , race_perc_non_white, ppl_per_sq_mile, median_household_income) %>% 
   group_by(state) %>% 
   filter(median_household_income > 0) %>% 
-  summarise(unique(location) , 
+  summarise(location = unique(location) , 
             fastest_speed_down = mean(fastest_speed_down), 
             fastest_speed_price = mean(fastest_speed_price),
             race_perc_non_white = mean(race_perc_non_white),
@@ -84,5 +84,6 @@ View(data_in_nation)
 
 ## The data of mean Internet record on national level. The data is categorize by state. 
 
+## The actual table
 
 

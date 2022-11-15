@@ -9,9 +9,22 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## What is this file for?
+## Overview
+This is a brief report regarding internet redlining for interent services provided by AT&T specifically based on data from a study conducted by _The MarkUp_. This report explores relationships between different socio-economic disparities such as race and household income with speed and price of internet services. ([source](https://github.com/the-markup/investigation-isp)).
+The data reveals that the maximum download speed provided by AT&T was 'r max_download_speed_ATT' , while the maximum upload speed provided by AT&T was 'r max_upload_speed_ATT'. The lowest speed of internet service provided in non-white areas by AT&T was 'r lowest_speed_in_non_white_location_ATT'. 
 
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+Here are the locations which experienced the lowest internet redlining by AT&T 'r locations_with_lowest_Redlining_Grade_ATT'. 
+
+
+## Internet speed distributions by household income
+To visually identify disparities in internet speeds by household income, here are four pie charts displaying internet speed distributions for each household income level separately:
+```{r pressure, echo=FALSE}
+plot(B4)
+```
+
+This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 
+
+
 
 * Please see Canvas for more details.
 
@@ -43,14 +56,4 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-##Chart 1
-```{r pressure, echo=FALSE}
-plot(B4)
-```
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 

@@ -2,12 +2,12 @@ library(tidyverse)
 library(plotly)
 
 
-att <- read.csv("speed_price_att.csv.gz")
-att_other <- read.csv("speed_price_att_other_cities.csv.gz")
+att <- read.csv("../data/speed_price_att.csv.gz")
+att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
 att_total <- full_join(att, att_other)
-century_link <- read.csv("speed_price_centurylink.csv.gz")
-earthlink <- read.csv("speed_price_earthlink.csv.gz")
-verizon <- read.csv("speed_price_verizon.csv.gz")
+century_link <- read.csv("../data/speed_price_centurylink.csv.gz")
+earthlink <- read.csv("../data/speed_price_earthlink.csv.gz")
+verizon <- read.csv("../data/speed_price_verizon.csv.gz")
 
 all <- full_join(att_total, century_link) %>% 
   full_join(earthlink) %>% 

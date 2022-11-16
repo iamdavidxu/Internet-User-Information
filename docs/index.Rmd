@@ -43,9 +43,9 @@ This pie chart shows the distributions of the different kinds of internet most u
 
 ```{r, ECHO = TRUE}
 
-##source("../source/InternetTypesPieCart.R")
+source("../source/InternetTypesPieChart.R")
 
-##pie_total
+pie_total
 ```
 
 This chart shows the distribution of the types of internet used across America. In the future, we will have this data be able to be segmented by state, so users can choose a state that they want to inspect. 

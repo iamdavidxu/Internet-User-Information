@@ -42,9 +42,7 @@ This pie chart shows the distributions of the different kinds of internet most u
 
 
 ```{r, ECHO = TRUE}
-
 source("../source/InternetTypesPieChart.R")
-
 pie_total
 ```
 
@@ -67,7 +65,6 @@ To visually identify disparities in internet speeds by household income, here ar
 
 
 ```{r, ECHO = FALSE}
-
 source("../source/B4.R")
 a
 b
@@ -75,7 +72,3 @@ c
 d
 ```
 This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 
-
-
-
-

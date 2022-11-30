@@ -60,15 +60,11 @@ ISP_Speeds_plot
 This chart is a bar chart that, based on who the provider is, shows the average upload and download speed across all the data we have. This chart is also interactive, when you hover over each column, you can see the exact upload and download speed. This chart allows users to see which Internet Service Providers (ISPs) have the fastest average internet.
 
 
-## Internet speed distributions by household income
-To visually identify disparities in internet speeds by household income, here are four pie charts displaying internet speed distributions for each household income level separately:
-
+## Internet speed distributions based on redlining
+To visually identify disparities in internet speeds by redlining level, here is a choropleth math that visualizes the percentage point difference of lower income areas with slower internet speeds:
 
 ```{r, ECHO = FALSE}
 source("../source/B4.R")
-a
-b
-c
-d
+plot_choropleth
 ```
-This data visualization includes four pie charts that show the internet speed of households based on their income level. There is one pie chart for lower income households, one for middle-lower, one for upper-middle, and one for upper. We chose a pie chart for this visualization because it allows viewers to easily understand the disparities in internet speeds between household income levels. Rather than a bar chart or scatterplot, a pie charts is the most visually appealing for this purpose so that the differing speed levels can be easily perceived. 
+This data visualization includes a choropleth map that displays the percentage point difference of lower income areas across the country with slower internet speeds. This chart allows users to visualize the overall impacts of internet redlining across the country through a scale of redlining grades represented by varying shades of blue. A lighter shade of blue represents less internet redlining, whereas a darker shade represents a higher level of internet redlining and grey represents areas where the data was "NA". 

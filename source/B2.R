@@ -4,14 +4,6 @@
 ## I pushed the cvs files on github repo, run the line and click on the file to read it :).
 ATT_price <- read.csv(file.choose())
   #att
-ATT_other_price <- read.csv(file.choose())
-  #attother
-Centurylink_price <- read.csv(file.choose())
-  #centurylink
-Earthlink_price <- read.csv(file.choose())
-  #earthlink
-Verizon_price <- read.csv(file.choose())
-  #Verizon
 
 
 

@@ -7,7 +7,7 @@ output: html_document
 
 
 library(knitr)
-```{r}
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
 library("tidyverse")
 library("plotly")
 ```
@@ -29,7 +29,7 @@ Here are the locations which experienced the lowest internet redlining by AT&T '
 ## Data_summary_in_nation
 Here is the mean data of AT&T group by state.
 
-```{r}
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
 source("../source/B3.R")
 data_in_nation
 ```
@@ -41,8 +41,8 @@ The data of mean Internet record on national level. The data is categorize by st
 This pie chart shows the distributions of the different kinds of internet most used: Copper, Fiber, Fiber Based, Not Fiber. 
 
 
-```{r, ECHO = TRUE}
-source("../source/InternetTypesPieChart.R")
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
+source("../source/B6.R")
 pie_total
 ```
 
@@ -53,8 +53,8 @@ This chart shows the distribution of the types of internet used across America. 
 
 ## Internet speed for each provider
 Here's a barchart showing the up and download speed:
-```{r, ECHO = FALSE}
-source("../source/UpDownLoadSpeed.R")
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
+source("../source/B5.R")
 ISP_Speeds_plot
 ```
 This chart is a bar chart that, based on who the provider is, shows the average upload and download speed across all the data we have. This chart is also interactive, when you hover over each column, you can see the exact upload and download speed. This chart allows users to see which Internet Service Providers (ISPs) have the fastest average internet.
@@ -63,7 +63,7 @@ This chart is a bar chart that, based on who the provider is, shows the average 
 ## Internet speed distributions based on redlining
 To visually identify disparities in internet speeds by redlining level, here is a choropleth math that visualizes the percentage point difference of lower income areas with slower internet speeds:
 
-```{r, ECHO = FALSE}
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
 source("../source/B4.R")
 plot_choropleth
 ```

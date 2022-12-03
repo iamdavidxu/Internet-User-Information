@@ -14,13 +14,16 @@ library("plotly")
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+```{r, message = FALSE, echo = FALSE, warning = FALSE}
+source("../source/B2.R")
+```
 ## Overview
-This is a brief report regarding internet redlining for interent services provided by AT&T specifically based on data from a study conducted by _The MarkUp_. This report explores relationships between different socio-economic disparities such as race and household income with speed and price of internet services. ([source](https://github.com/the-markup/investigation-isp)).
-The data reveals that the maximum download speed provided by AT&T was 'r max_download_speed_ATT' , while the maximum upload speed provided by AT&T was 
-'r max_upload_speed_ATT'. The lowest speed of internet service provided in non-white areas by AT&T was 'r lowest_speed_in_non_white_location_ATT'. 
+This is a brief report regarding internet redlining for internet services provided by AT&T specifically based on data from a study conducted by _The MarkUp_. This report explores relationships between different socio-economic disparities such as race and household income with speed and price of internet services. 
+([source](https://github.com/the-markup/investigation-isp)).
+The data reveals that the maximum download speed provided by AT&T was `r Max_download_speed_ATT`, while the maximum upload speed provided by AT&T was 
+`r Max_upload_speed_ATT`. The lowest speed of internet service provided in non-white areas by AT&T was `r locations_with_lowest_Redling_Grade_ATT`. 
 
-Here are the locations which experienced the lowest internet redlining by AT&T 'r locations_with_lowest_Redlining_Grade_ATT'. 
+Here are the locations which experienced the lowest internet redlining by AT&T `r locations_with_lowest_Redling_Grade_ATT`. 
 
 
 

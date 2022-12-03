@@ -14,6 +14,5 @@ ISP_Speeds_plot <- ggplot(ISP_Speeds, aes(provider, speed, fill = up_or_down)) +
   labs(title="Upload and Download Speed By Provider") +
   xlab("Provider") + ylab("Internet Speed (Mbps)") +
   scale_fill_discrete(name = "Type of Speed", labels = c("Download", "Upload"))
+ISP_Speeds_plot <- ggplotly(ISP_Speeds_plot)
 ISP_Speeds_plot
-#Why does plotly mess up the legend
-ggplotly(ISP_Speeds_plot)

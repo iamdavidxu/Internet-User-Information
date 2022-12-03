@@ -1,23 +1,18 @@
 library(tidyverse)
 library(plotly)
 
-
 att <- read.csv("../data/speed_price_att.csv.gz")
 att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
 att_total <- full_join(att, att_other)
-century_link <- read.csv("../data/speed_price_centurylink.csv.gz")
-earthlink <- read.csv("../data/speed_price_earthlink.csv.gz")
-verizon <- read.csv("../data/speed_price_verizon.csv.gz")
 
-all <- full_join(att_total, century_link) %>% 
-  full_join(earthlink) %>% 
-  full_join(verizon) %>% 
+
+all <- att_total %>% 
   filter(median_household_income > 0)
 
 all_WA <- filter(all, state == "WA") %>% 
   filter(median_household_income < 250000)
 
-fiber_in_state <- all %>% group_by(state) %>% 
+fiber_in_state <- att_total %>% group_by(state) %>% 
   count(tolower(technology)) %>% 
   na.omit()
 colnames(fiber_in_state) [2] <- "Internet_Type"
@@ -36,11 +31,11 @@ pie_total <- ggplot(fiber_in_state, aes(x="", y=n, fill= tolower(Internet_Type))
   coord_polar("y", start=0) +
   theme_void() +
   scale_fill_discrete(name = "Internet Type", 
-                      labels = c("Copper", "Fiber", "Fiber Based", "Not Fiber")) +
+                      labels = c("Copper", "Fiber", "Fiber Based")) +
   labs(title="Types of Internet Service Purchased")
 pie_total
 
 #figure out how to add this or at least show percentages
 
-##ggplotly(pie_total)
+#ggplot_ly(pie_total)
 

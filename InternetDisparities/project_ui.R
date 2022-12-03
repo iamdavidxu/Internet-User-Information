@@ -34,8 +34,32 @@ ui <- shinyUI(fluidPage(
                         )
                       )
              ),
-             tabPanel("Page 2"), 
-             tabPanel("Page 3"), 
+             tabPanel("Page 2",
+                      sidebarLayout(
+                        sidebarPanel(
+                          #add widgets and input things here
+                          
+                        ),
+                        
+                        mainPanel(
+                          #add main code here like plots
+                          
+                        )
+                      )
+             ), 
+             tabPanel("Page 3",
+                      sidebarLayout(
+                        sidebarPanel(
+                          #add widgets and input things here
+                          
+                        ),
+                        
+                        mainPanel(
+                          #add main code here like plots
+                          
+                        )
+                      )
+             ), 
              tabPanel("Summary"),
                       
   

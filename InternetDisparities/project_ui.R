@@ -19,8 +19,26 @@ number_slider <- sliderInput(
 
 
 # Define UI for application that draws a histogram
-ui <- fluidPage(
-  number_slider,
-  textOutput("test_word")
-)
-
+ui <- shinyUI(fluidPage(
+  
+  navbarPage("Internet Information", 
+             tabPanel("Introduction"),
+             tabPanel("Page 1",
+                      sidebarLayout(
+                        sidebarPanel(
+                          number_slider
+                        ),
+                        
+                        mainPanel(
+                          textOutput("test_word")
+                        )
+                      )
+             ),
+             tabPanel("Page 2"), 
+             tabPanel("Page 3"), 
+             tabPanel("Summary"),
+                      
+  
+  )  
+  
+))

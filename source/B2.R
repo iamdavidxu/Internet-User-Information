@@ -1,10 +1,13 @@
+
+
 ## DATA
 ## I pushed the cvs files on github repo, run the line and click on the file to read it :).
+
 ATT_price <- read.csv("../data/speed_price_att.csv.gz")
-  #att
+
+
 
 ## Packages
-
 library("tidyverse")
 
 ## Summary
@@ -30,6 +33,7 @@ Income_ATT <- ATT_price %>%
 
 ATT_price <- ATT_price %>%
   mutate(location = paste0(incorporated_place,", ", major_city , ", " , state))
+
 
 
 locations_with_lowest_Redling_Grade_ATT <- ATT_price %>% 

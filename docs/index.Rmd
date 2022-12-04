@@ -63,7 +63,7 @@ The data of mean Internet record on national level. The data is categorize by st
 This pie chart shows the distributions of the different kinds of internet most used: Copper, Fiber, Fiber Based, Not Fiber. 
 
 
-```{r, message = FALSE, echo = FALSE, warning = FALSE}
+```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width = 10}
 source("../source/B6.R")
 pie_total
 ```
@@ -75,7 +75,7 @@ This chart shows the distribution of the types of internet used across America. 
 
 ## Internet speed for each provider
 Here's a barchart showing the up and download speed:
-```{r, message = FALSE, echo = FALSE, warning = FALSE}
+```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width = 10}
 source("../source/B5.R")
 ISP_Speeds_plot
 ```
@@ -85,7 +85,7 @@ This chart is a bar chart that, based on who the provider is, shows the average 
 ## Internet speed distributions based on redlining
 To visually identify disparities in internet speeds by redlining level, here is a choropleth math that visualizes the percentage point difference of lower income areas with slower internet speeds:
 
-```{r, message = FALSE, echo = FALSE, warning = FALSE}
+```{r, message = FALSE, echo = FALSE, warning = FALSE, fig.width = 10}
 source("../source/B4.R")
 plot_choropleth
 ```

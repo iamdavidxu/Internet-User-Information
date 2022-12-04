@@ -52,7 +52,7 @@ ui <- shinyUI(fluidPage(
                           p("What types of Internet are most often used, and what are the implications of usage of those types?"),
                           p("How does the Internet speed for each provider vary by download and upload speed?"),
                           p("How are different areas across the country impacted by internet redlining practices?"),
-                          img(src = "isp_main_841x473.jpg", height = 841, width = 473)
+                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 473)
                         )
                       )
              ),

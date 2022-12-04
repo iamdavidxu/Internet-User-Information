@@ -76,7 +76,7 @@ ui <- shinyUI(fluidPage(
                         ),
                         
                         mainPanel(
-                          #add main code here like plots
+                          plotOutput("plot_choropleth")
                           
                         )
                       )

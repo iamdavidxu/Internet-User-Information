@@ -42,7 +42,16 @@ ui <- shinyUI(fluidPage(
                         ),
                         
                         mainPanel(
-                          textOutput("test_word")
+                          h1("Introduction"),
+                          p("For this project we plan on exploring the relationship between internet service speed and prices in different areas across the United States, and how different internet service providers redline certain areas to essentially price-gouge lower income areas."),
+                          p("During the Covid-19 pandemic, people were forced to remain online for a much more extensive amount of time than ever before, and this lead to internet service providers increasing prices to maximize profits.
+                          Lower-income areas often have high prices for low internet speeds, something that is completely unnecessary and only goes to further the socioeconomic differences in major cities and the United States as a whole.
+                          The data we are using for this project is hosted on Kaggle and has three data files with information primarily on AT&T, as well as a summary file with specific demographic breakdowns of areas.
+                          We will compare the data for AT&T across the country to determine which areas are experiencing the most Internet Redlining."),
+                          p("Some questions we are exploring include:"),
+                          p("What types of Internet are most often used, and what are the implications of usage of those types?"),
+                          p("How does the Internet speed for each provider vary by download and upload speed?"),
+                          p("How are different areas across the country impacted by internet redlining practices?")
                         )
                       )
              ),

@@ -17,6 +17,18 @@ number_slider <- sliderInput(
   value = 5,
 )
 
+state_chose <- selectInput(
+  "state.choice",
+  label = "State Picker",
+  choices = list(
+    "AL" = "AL", "AR" = "AR", "CA" = "CA", "FL" = "FL", "GA" = "GA", 
+    "IL" = "IL", "IN" = "IN", "KS" = "KS", 
+    "KY" = "KY", "LA" = "LA", "MI" = "MI", "MO" = "MO", "MS" = "MS", 
+    "NC"  = "NC", "OH" = "OH", "OK" = "OK", 
+    "SC" = "SC", "TN" = "TN", "TX" = "TX", "WI" = "WI"
+  )
+)
+
 
 # Define UI for application that draws a histogram
 ui <- shinyUI(fluidPage(
@@ -37,13 +49,12 @@ ui <- shinyUI(fluidPage(
              tabPanel("Page 2",
                       sidebarLayout(
                         sidebarPanel(
-                          #add widgets and input things here
-                          
+                          state_chose                     
                         ),
                         
                         mainPanel(
-                          #add main code here like plots
-                          
+                          plotOutput("pie_chart"),
+                          plotOutput("pie_chart_state")
                         )
                       )
              ), 
@@ -61,8 +72,7 @@ ui <- shinyUI(fluidPage(
                       )
              ), 
              tabPanel("Summary"),
-                      
-  
+                    
   )  
   
 ))

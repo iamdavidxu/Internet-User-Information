@@ -6,12 +6,31 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+library(tidyverse)
+library(plotly)
 library(shiny)
+
+source("../source/B6.R")
+
+att <- read.csv("../data/speed_price_att.csv.gz")
+att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
+att_total <- full_join(att, att_other) %>% 
+  filter(median_household_income > 0)
+
+fiber_in_state <- att_total %>% group_by(state) %>% 
+  count(tolower(technology)) %>% 
+  na.omit()
+colnames(fiber_in_state) [2] <- "Internet_Type"
 
 server <- function(input, output){
   
- 
+  output$pie_chart_state <- renderPlot({
+    return(build_state_pie(fiber_in_state, input$state.choice))
+  })
+  output$pie_chart <- renderPlot({
+    return(build_pie(fiber_in_state))
+  })
+
   output$test_word <- renderText({
     paste("Hello. The number is ", input$slider)
   })

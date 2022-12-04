@@ -5,7 +5,6 @@ att <- read.csv("../data/speed_price_att.csv.gz")
 att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
 att_total <- full_join(att, att_other)
 
-
 all <- att_total %>% 
   filter(median_household_income > 0)
 
@@ -39,3 +38,26 @@ pie_total
 
 #ggplot_ly(pie_total)
 
+build_pie <- function(data){
+  pie_total <- ggplot(data, aes(x="", y=n, fill= tolower(Internet_Type))) +
+    geom_bar(stat="identity", width=1) +
+    coord_polar("y", start=0) +
+    theme_void() +
+    scale_fill_discrete(name = "Internet Type", 
+                        labels = c("Copper", "Fiber", "Fiber Based")) +
+    labs(title="Types of Internet Service Purchased Averaged Across All States")
+  return(pie_total)
+}
+
+build_state_pie <- function(data, state.choice){
+  data <- data %>% filter(state == state.choice)
+  
+  pie_state <- ggplot(data, aes(x="", y=n, fill=Internet_Type)) +
+    geom_bar(stat="identity", width=1, color="white") +
+    coord_polar("y", start=0) +
+    theme_void() +
+    scale_fill_discrete(name = "Internet Type", 
+                        labels = c("Copper", "Fiber", "Fiber Based")) +
+    labs(title="Types of Internet Service Purchased In a Certain State")
+  return(pie_state)
+}

@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(shinythemes)
 
 number_slider <- sliderInput(
   inputId = "slider",
@@ -31,7 +32,7 @@ state_chose <- selectInput(
 
 
 # Define UI for application that draws a histogram
-ui <- shinyUI(fluidPage(
+ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
   
   navbarPage("Internet Information", 
              tabPanel("Introduction",
@@ -50,7 +51,7 @@ ui <- shinyUI(fluidPage(
                         ),
                         mainPanel(
                          
-                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 950)
+                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 1000)
                           
                           )
                       )
@@ -82,7 +83,7 @@ ui <- shinyUI(fluidPage(
                         ),
                         
                         mainPanel(
-                          h1("Page 1: Types of Internet Purchased From AT&T"),
+                          h1("Types of Internet Purchased From AT&T"),
                           plotOutput("pie_chart"),
                           p("This chart shows the most popular types of internet purchased from AT&T. 
                             This chart specifically combines all the states that we have data for. 

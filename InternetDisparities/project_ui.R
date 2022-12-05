@@ -74,9 +74,38 @@ ui <- shinyUI(fluidPage(
                         ),
                         
                         mainPanel(
-                          h1("Page 1: Types of internet purchased in each state"),
+                          h1("Page 1: Types of Internet Purchased From AT&T"),
                           plotOutput("pie_chart"),
-                          p("This "),
+                          p("This chart shows the most popular types of internet purchased from AT&T. 
+                            This chart specifically combines all the states that we have data for. 
+                            As you can see, copper is the least purchased type of internet by AT&T 
+                            users and fiber and fiber-based internet is _significantly_ more purchased. 
+                            The differences between the types of internet are clear: copper is cheaper, has 
+                            lower speeds, and has to be replaced/fixed more often compared to fiber internet 
+                            which is more expensive but has faster speeds and less maintenance."),
+                          h3("Environmental and Money Implications of This Data"),
+                          p("'Not only does fiber offer consumers the fastest possible internet speeds, 
+                          but it's also better for the environment than most copper broadband. 
+                          It uses more sustainable materials, has a smaller carbon footprint and reduces 
+                          waste and pollution.'"),
+                          tags$div(
+                            "The source for this is the ",
+                            tags$a(href="https://blog.frontier.com/2022/09/how-does-choosing-fiber-internet-
+                                   benefit-the-environment/#:~:text=Not%20only%20does%20fiber%20offer,and%20
+                                   reduces%20waste%20and%20pollution.", 
+                                   "Frontier Blog")
+                          ),
+                          p("By interacting with the chart on the left, the chart will change to show which 
+                            types of internet are purchased the most in the chosen state. This interactive 
+                            visualization shows us that some states purchase copper much more than others, 
+                            possibly meaning that the state is not as financially stable and must choose the 
+                            cheaper option, or it could be that the state’s internet is out-of-date and the 
+                            most current and best internet (fiber) is not available. This also allows us to 
+                            see which states’ internet is having the worst impact on the environment. For example, 
+                            Louisiana has the worst impact on the environment all for internet, because a very 
+                            small percentage of the population has fiber, more have fiber-based which is better 
+                            than copper, but still not as safe as pure fiber internet and the majority have copper 
+                            internet, the cheapest but worst available option.")
                         )
                       )
              ), 

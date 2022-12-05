@@ -69,8 +69,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           average upload and download speed across all the data we have. This chart is 
                           also interactive, when you hover over each column, you can see the exact upload 
                           and download speed. This chart allows users to see which Internet Service Providers 
-                          (ISPs) have the fastest average internet.
-")
+                          (ISPs) have the fastest average internet.")
                         )
                       )
              ),
@@ -98,7 +97,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           It uses more sustainable materials, has a smaller carbon footprint and reduces 
                           waste and pollution.'"),
                           tags$div(
-                            "The source for this is the ",
+                            "This quote is cited from the ",
                             tags$a(href="https://blog.frontier.com/2022/09/how-does-choosing-fiber-internet-
                                    benefit-the-environment/#:~:text=Not%20only%20does%20fiber%20offer,and%20
                                    reduces%20waste%20and%20pollution.", 

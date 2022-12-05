@@ -10,6 +10,13 @@ library(tidyverse)
 library(plotly)
 library(shiny)
 
+
+print(unique(att_total$fastest_speed_price))
+#do some dplyr to find the relationship between the price of the fastest internet 
+#and the percentage non-white or income below median to see if people are being 
+#upcharged or if they don't have enough money to purchase these fast internet prices
+
+
 source("../source/B6.R")
 source("../source/B5.R")
 

@@ -37,9 +37,6 @@ ui <- shinyUI(fluidPage(
              tabPanel("Introduction",
                       sidebarLayout(
                         sidebarPanel(
-                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 473)
-                        ),
-                        mainPanel(
                           h1("Introduction"),
                           p("For this project we plan on exploring the relationship between internet service speed and prices in different areas across the United States, and how different internet service providers redline certain areas to essentially price-gouge lower income areas."),
                           p("During the Covid-19 pandemic, people were forced to remain online for a much more extensive amount of time than ever before, and this lead to internet service providers increasing prices to maximize profits.
@@ -49,8 +46,13 @@ ui <- shinyUI(fluidPage(
                           p("Some questions we are exploring include:"),
                           p("What types of Internet are most often used, and what are the implications of usage of those types?"),
                           p("How does the Internet speed for each provider vary by download and upload speed?"),
-                          p("How are different areas across the country impacted by internet redlining practices?"),
-                        )
+                          p("How are different areas across the country impacted by internet redlining practices?")
+                        ),
+                        mainPanel(
+                         
+                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 950)
+                          
+                          )
                       )
                       
               ),

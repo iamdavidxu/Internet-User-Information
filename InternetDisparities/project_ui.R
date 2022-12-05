@@ -59,11 +59,17 @@ ui <- shinyUI(fluidPage(
              tabPanel("Page 1",
                       sidebarLayout(
                         sidebarPanel(
-                          number_slider
+                          
                         ),
                         
                         mainPanel(
-                          
+                          plotlyOutput("speed_chart"),
+                          p("This chart is a bar chart that, based on who the provider is, shows the 
+                          average upload and download speed across all the data we have. This chart is 
+                          also interactive, when you hover over each column, you can see the exact upload 
+                          and download speed. This chart allows users to see which Internet Service Providers 
+                          (ISPs) have the fastest average internet.
+")
                         )
                       )
              ),

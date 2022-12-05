@@ -11,6 +11,8 @@ library(plotly)
 library(shiny)
 
 source("../source/B6.R")
+source("../source/B5.R")
+
 
 att <- read.csv("../data/speed_price_att.csv.gz")
 att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
@@ -30,9 +32,8 @@ server <- function(input, output){
   output$pie_chart <- renderPlot({
     return(build_pie(fiber_in_state))
   })
-
-  output$test_word <- renderText({
-    paste("Hello. The number is ", input$slider)
+  output$speed_chart <- renderPlotly({
+    return(ISP_Speeds_plot)
   })
 
 }

@@ -34,13 +34,11 @@ state_chose <- selectInput(
 ui <- shinyUI(fluidPage(
   
   navbarPage("Internet Information", 
-             tabPanel("Introduction"),
-             tabPanel("Page 1",
+             tabPanel("Introduction",
                       sidebarLayout(
                         sidebarPanel(
-                          number_slider
+                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 473)
                         ),
-                        
                         mainPanel(
                           h1("Introduction"),
                           p("For this project we plan on exploring the relationship between internet service speed and prices in different areas across the United States, and how different internet service providers redline certain areas to essentially price-gouge lower income areas."),
@@ -52,19 +50,33 @@ ui <- shinyUI(fluidPage(
                           p("What types of Internet are most often used, and what are the implications of usage of those types?"),
                           p("How does the Internet speed for each provider vary by download and upload speed?"),
                           p("How are different areas across the country impacted by internet redlining practices?"),
-                          img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 473)
                         )
                       )
-             ),
-             tabPanel("Page 2",
+                      
+              ),
+             tabPanel("Page 1",
                       sidebarLayout(
                         sidebarPanel(
-                          state_chose                     
+                          number_slider
                         ),
                         
                         mainPanel(
-                          plotOutput("pie_chart"),
+                          
+                        )
+                      )
+             ),
+             tabPanel("Page 2",  
+                      sidebarLayout(
+                        sidebarPanel(
+                          state_chose,     
                           plotOutput("pie_chart_state")
+                          
+                        ),
+                        
+                        mainPanel(
+                          h1("Page 1: Types of internet purchased in each state"),
+                          plotOutput("pie_chart"),
+                          p("This "),
                         )
                       )
              ), 

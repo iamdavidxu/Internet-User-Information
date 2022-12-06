@@ -19,7 +19,7 @@ number_slider <- sliderInput(
 )
 race_slider <- sliderInput("race_perc", "Percentage of Non-white",
             min = 0, max = 1,
-            value = c(0,1)
+            value = c(0, 1)
 )
 
 state_chose <- selectInput(
@@ -69,12 +69,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                         
                         mainPanel(
                           plotOutput("race_scatter"),
-                          plotlyOutput("speed_chart"),
-                          p("This chart is a bar chart that, based on who the provider is, shows the 
-                          average upload and download speed across all the data we have. This chart is 
-                          also interactive, when you hover over each column, you can see the exact upload 
-                          and download speed. This chart allows users to see which Internet Service Providers 
-                          (ISPs) have the fastest average internet.")
+                         
                         )
                       )
              ),
@@ -135,7 +130,15 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                         )
                       )
              ), 
-             tabPanel("Summary"),
+             tabPanel("Summary", 
+                      mainPanel(
+                        plotlyOutput("speed_chart"),
+                        p("This chart is a bar chart that, based on who the provider is, shows the 
+                          average upload and download speed across all the data we have. This chart is 
+                          also interactive, when you hover over each column, you can see the exact upload 
+                          and download speed. This chart allows users to see which Internet Service Providers 
+                          (ISPs) have the fastest average internet.")
+                      )),
                     
   )  
   

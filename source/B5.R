@@ -22,15 +22,13 @@
   att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
   att_total <- full_join(att, att_other) %>% 
     filter(median_household_income > 0)
-  
-  print(unique(att_total$fastest_speed_price))
-  
+
   build_scatter <- function(data, race_perc){
 #    data <- data %>% filter(race_perc_non_white  <= input2 & race_perc_non_white >= input1)
-    data <- data %>% filter(race_perc_non_white  <= race_perc)
+    data <- data %>% filter(race_perc_non_white >= race_perc[1] & race_perc_non_white <= race_perc[2])
     
     
-    scatter_price <- ggplot(att_total_x, mapping = 
+    scatter_price <- ggplot(data, mapping = 
                               aes(x = income_dollars_below_median, 
                                   y = race_perc_non_white,
                                   color = fastest_speed_price

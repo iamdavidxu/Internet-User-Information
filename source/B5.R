@@ -25,6 +25,23 @@
   
   print(unique(att_total$fastest_speed_price))
   
-  x <- att_total %>% filter(race_perc_non_white <= 0 )
-
+  build_scatter <- function(data, race_perc){
+#    data <- data %>% filter(race_perc_non_white  <= input2 & race_perc_non_white >= input1)
+    data <- data %>% filter(race_perc_non_white  <= race_perc)
+    
+    
+    scatter_price <- ggplot(att_total_x, mapping = 
+                              aes(x = income_dollars_below_median, 
+                                  y = race_perc_non_white,
+                                  color = fastest_speed_price
+                                  
+                              )) +
+      geom_point() +
+      labs(title = "Price of Internet Based on Income and Non-white Population Percentage",
+           color = "Price of Internet") +
+      xlab("Income below median (dollars)") + ylab("Percentage of Non-white") +
+      scale_x_continuous(labels = label_comma())
+    return(scatter_price)
+  }
+  
 

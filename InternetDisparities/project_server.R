@@ -46,5 +46,8 @@ server <- function(input, output){
   output$speed_chart <- renderPlotly({
     return(ISP_Speeds_plot)
   })
+  output$race_scatter <- renderPlot({
+    return(build_scatter(att_total, input$race_perc))
+  })
 
 }

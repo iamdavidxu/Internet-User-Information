@@ -10,21 +10,14 @@
 library(shiny)
 library(shinythemes)
 
-number_slider <- sliderInput(
-  inputId = "slider",
-  label = "Test Slider",
-  min = 0,
-  max = 10,
-  value = 5,
-)
-race_slider <- sliderInput("race_perc", "Percentage of Non-white",
+race_slider <- sliderInput("race_perc", "Range of Percentage of Non-white People in an Area",
             min = 0, max = 1,
             value = c(0, 1)
 )
 
 state_chose <- selectInput(
   "state.choice",
-  label = "State Picker",
+  label = "State",
   choices = list(
     "AL" = "AL", "AR" = "AR", "CA" = "CA", "FL" = "FL", "GA" = "GA", 
     "IL" = "IL", "IN" = "IN", "KS" = "KS", 
@@ -49,31 +42,59 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           The data we are using for this project is hosted on Kaggle and has three data files with information primarily on AT&T, as well as a summary file with specific demographic breakdowns of areas.
                           We will compare the data for AT&T across the country to determine which areas are experiencing the most Internet Redlining."),
                           p("Some questions we are exploring include:"),
+                          p("Do internet service providers charge more for internet based on race and/or income?"),
                           p("What types of Internet are most often used, and what are the implications of usage of those types?"),
-                          p("How does the Internet speed for each provider vary by download and upload speed?"),
                           p("How are different areas across the country impacted by internet redlining practices?")
                         ),
                         mainPanel(
-                         
                           img(src = "https://mrkp-static-production.themarkup.org/uploads/2022/10/isp_main-841x473.jpg", height = 841, width = 1000)
                           
                           )
                       )
                       
               ),
-             tabPanel("Page 1",
+             tabPanel("Cost",
                       sidebarLayout(
                         sidebarPanel(
                           race_slider
                         ),
                         
                         mainPanel(
+                          h1("Cost of Internet Related to Race and Income"),
                           plotOutput("race_scatter"),
+                         p("This data visualization takes into account multiple aspects of our dataset:
+                             the percentage of non-white people living in the recorded area, the income 
+                           of those people, and the amount of money that they are paying for their internet. 
+                           The interactive aspect, the ranger slider to the left, allows users to investigate 
+                           the economic differences between groups with specific amounts of ethnicity to determine 
+                           for themselves if internet service providers (ISPs, in this case specifically AT&T) 
+                           potentially upcharge people who live in areas with a smaller white population."),
+                         h3("Our Findings"),
+                         p("There is too much data (which was poorly collected and is clearly generalized) 
+                           to really discern whether or not AT&T charges people more money for internet based 
+                           on the racial makeup of the place they live, however this visualization does show a 
+                           strong correlation between the price and percentage of non-white people in the area 
+                          ", strong(" as well as "), "people who are living significantly below the average income for their area."),
+                         p("If we completely neglect the colors that describe the price of internet, we see that this 
+                           graph also demonstrates a much stronger correlation between the average income and race makeup 
+                           of a certain area. That in itself is completely seperate from anything related to an 
+                           Internet Service Provider, but the it is nonetheless a problem in the United States. 
+                           This is a rea, very large issue that is outside the scope of our research and data, but 
+                           we have done enough research to have realized that to some degree, Internet Service Providers 
+                           like AT&T do charge more money to people they know cannot afford it, but still rely on it. ISP’s 
+                           put these people in a chokehold because they know everyone needs internet, and there is nothing to 
+                           stop them from doing so. We are only able to draw conclusions about the data that we observed, but 
+                           we would like our readers to come to their own conclusions about the ethicality of these internet 
+                           companies, and ponder the question, if people are charged extra just for internet, what else are they 
+                           charged more for? This overhcharging of people in poverty and the racist price gouging tactics 
+                           employed by large companies is one of the many reasons why people in poverty often stay in poverty, 
+                           and why minorities are more likely to have an income below the average for their area.") 
+
                          
                         )
                       )
              ),
-             tabPanel("Page 2",  
+             tabPanel("Type",  
                       sidebarLayout(
                         sidebarPanel(
                           state_chose,     
@@ -87,7 +108,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           p("This chart shows the most popular types of internet purchased from AT&T. 
                             This chart specifically combines all the states that we have data for. 
                             As you can see, copper is the least purchased type of internet by AT&T 
-                            users and fiber and fiber-based internet is _significantly_ more purchased. 
+                            users and fiber and fiber-based internet is", strong(" significantly "), "more purchased. 
                             The differences between the types of internet are clear: copper is cheaper, has 
                             lower speeds, and has to be replaced/fixed more often compared to fiber internet 
                             which is more expensive but has faster speeds and less maintenance."),
@@ -117,7 +138,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                         )
                       )
              ), 
-             tabPanel("Page 3",
+             tabPanel("Redlining",
                       sidebarLayout(
                         sidebarPanel(
                           #add widgets and input things here
@@ -140,6 +161,6 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           (ISPs) have the fastest average internet.")
                       )),
                     
-  )  
-  
+    
+  )
 ))

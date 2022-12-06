@@ -12,7 +12,6 @@ library(shiny)
 library(scales)
 
 
-
 source("../source/B6.R")
 source("../source/B5.R")
 

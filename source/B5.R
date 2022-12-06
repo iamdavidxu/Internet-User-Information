@@ -25,8 +25,7 @@
     filter(median_household_income > 0)
 
   build_scatter <- function(data, race_perc){
-    data <- att_total %>% filter(race_perc_non_white  <= 1)
-#    data <- data %>% filter(race_perc_non_white >= race_perc[1] & race_perc_non_white <= race_perc[2])
+    data <- data %>% filter(race_perc_non_white >= race_perc[1] & race_perc_non_white <= race_perc[2])
     
     
     scatter_price <- ggplot(data, mapping = 
@@ -40,7 +39,6 @@
            color = "Price of Internet") +
       xlab("Income below median (dollars)") + ylab("Percentage of Non-white") +
       scale_x_continuous(labels = label_comma())
-    scatter_price
     return(scatter_price)
   }
   

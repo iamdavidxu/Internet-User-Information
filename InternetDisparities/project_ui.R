@@ -9,10 +9,15 @@
 
 library(shiny)
 library(shinythemes)
+<<<<<<< HEAD
 library(ggplot2)
 library(plotly)
 library(maps)
 
+=======
+library(scales)
+library(plotly)
+>>>>>>> 80f057df2e59d547e7655960588a32f984e28fbc
 race_slider <- sliderInput("race_perc", "Range of Percentage of Non-white People in an Area",
             min = 0, max = 1,
             value = c(0, 1)

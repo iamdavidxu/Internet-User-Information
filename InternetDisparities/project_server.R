@@ -10,7 +10,11 @@ library(tidyverse)
 library(plotly)
 library(ggplot2)
 library(shiny)
+<<<<<<< HEAD
 library(maps)
+=======
+library(scales)
+>>>>>>> 80f057df2e59d547e7655960588a32f984e28fbc
 
 
 source("../source/B6.R")

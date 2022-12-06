@@ -5,9 +5,9 @@ account: aidanbartlett0
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7824940
-bundleId: 6597980
+bundleId: 6598196
 url: https://aidanbartlett0.shinyapps.io/InternetDisparities/
-when: 1670311187.6896
-lastSyncTime: 1670311187.68961
+when: 1670315844.23054
+lastSyncTime: 1670315844.23055
 asMultiple: FALSE
 asStatic: FALSE

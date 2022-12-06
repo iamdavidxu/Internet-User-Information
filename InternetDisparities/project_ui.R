@@ -9,6 +9,7 @@
 
 library(shiny)
 library(shinythemes)
+library(scales)
 
 race_slider <- sliderInput("race_perc", "Range of Percentage of Non-white People in an Area",
             min = 0, max = 1,

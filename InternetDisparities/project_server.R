@@ -9,6 +9,7 @@
 library(tidyverse)
 library(plotly)
 library(shiny)
+library(scales)
 
 
 

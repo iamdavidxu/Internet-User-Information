@@ -16,5 +16,15 @@
     scale_fill_discrete(name = "Type of Speed", labels = c("Download", "Upload"))
   ISP_Speeds_plot <- ggplotly(ISP_Speeds_plot)
 
+  library(tidyverse)
+  
+  att <- read.csv("../data/speed_price_att.csv.gz")
+  att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
+  att_total <- full_join(att, att_other) %>% 
+    filter(median_household_income > 0)
+  
+  print(unique(att_total$fastest_speed_price))
+  
+  x <- att_total %>% filter(race_perc_non_white <= 0 )
 
 

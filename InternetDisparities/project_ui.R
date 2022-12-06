@@ -9,15 +9,12 @@
 
 library(shiny)
 library(shinythemes)
-<<<<<<< HEAD
 library(ggplot2)
 library(plotly)
 library(maps)
-
-=======
 library(scales)
 library(plotly)
->>>>>>> 80f057df2e59d547e7655960588a32f984e28fbc
+
 race_slider <- sliderInput("race_perc", "Range of Percentage of Non-white People in an Area",
             min = 0, max = 1,
             value = c(0, 1)
@@ -161,7 +158,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                         mainPanel(
                           h1("Internet Redlining by State"),
                           plotlyOutput("redlining_map"),
-                          p("This is text")
+                          p("This data visualization includes a choropleth map that displays the percentage point difference of lower income areas across the country with slower internet speeds. This chart allows users to visualize the overall impacts of internet redlining across the country through a scale of redlining grades represented by varying shades of blue. A lighter shade of blue represents less internet redlining, whereas a darker shade represents a higher level of internet redlining and grey represents areas where the data was NA.")
                         )
                       ),
                       

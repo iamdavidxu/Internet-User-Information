@@ -13,9 +13,9 @@ library(shiny)
 library(maps)
 library(scales)
 
-source("../source/B6.R")
-source("../source/B5.R")
-source("../source/B4.R")
+source("../source/B6.R", local = TRUE)
+source("../source/B5.R", local = TRUE)
+source("../source/B4.R", local = TRUE)
 
 
 att <- read.csv("../data/speed_price_att.csv.gz")

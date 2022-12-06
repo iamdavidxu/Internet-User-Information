@@ -46,3 +46,4 @@ plot_choropleth <- plot_choropleth + geom_polygon(data = merged_disparities,
   scale_fill_continuous(name="Percentage Point Difference of Lower Income Areas With Slow Internet", 
                         low = "lightblue", high = "darkblue",limits = c(-0.2, 0.5), 
                         breaks = c(-0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5), na.value = "grey")
+

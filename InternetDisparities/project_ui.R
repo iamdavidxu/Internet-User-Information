@@ -9,6 +9,9 @@
 
 library(shiny)
 library(shinythemes)
+library(ggplot2)
+library(plotly)
+library(maps)
 
 race_slider <- sliderInput("race_perc", "Range of Percentage of Non-white People in an Area",
             min = 0, max = 1,
@@ -26,6 +29,7 @@ state_chose <- selectInput(
     "SC" = "SC", "TN" = "TN", "TX" = "TX", "WI" = "WI"
   )
 )
+
 
 
 # Define UI for application that draws a histogram
@@ -139,21 +143,28 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                       )
              ), 
              tabPanel("Redlining",
+             
                       sidebarLayout(
                         sidebarPanel(
-                          #add widgets and input things here
-                          
+                          selectInput(
+                            "party.choice",
+                            label = "Political party affiliation",
+                            choices = list(
+                              "Democratic", "Republican")
+                          )
                         ),
-                        
                         mainPanel(
-                          plotOutput("plot_choropleth")
-                          
+                          h1("Internet Redlining by State"),
+                          plotlyOutput("redlining_map"),
+                          p("This is text")
                         )
-                      )
+                      ),
+                      
+                     
              ), 
              tabPanel("Summary", 
                       mainPanel(
-                        plotlyOutput("speed_chart"),
+                        plotOutput("speed_chart"),
                         p("This chart is a bar chart that, based on who the provider is, shows the 
                           average upload and download speed across all the data we have. This chart is 
                           also interactive, when you hover over each column, you can see the exact upload 
@@ -163,4 +174,6 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                     
     
   )
-))
+)
+)
+

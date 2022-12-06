@@ -8,12 +8,14 @@
 #
 library(tidyverse)
 library(plotly)
+library(ggplot2)
 library(shiny)
-
+library(maps)
 
 
 source("../source/B6.R")
 source("../source/B5.R")
+source("../source/B4.R")
 
 
 att <- read.csv("../data/speed_price_att.csv.gz")
@@ -25,6 +27,18 @@ fiber_in_state <- att_total %>% group_by(state) %>%
   count(tolower(technology)) %>% 
   na.omit()
 colnames(fiber_in_state) [2] <- "Internet_Type"
+
+
+#adding column of non-NA state party affiliations
+party_affiliation <- c("Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Swing", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Republican", "Democratic", "Democratic", "Swing", "Republican", "NA")
+
+redlining_speed <- redlining_speed %>%
+  mutate(
+    redlining_speed, "Party Affiliation" = party_affiliation
+    
+  )
+
+
 
 server <- function(input, output){
   
@@ -40,5 +54,9 @@ server <- function(input, output){
   output$race_scatter <- renderPlot({
     return(build_scatter(att_total, input$race_perc))
   })
+  
+  output$redlining_map <- renderPlotly({
+    return(plot_choropleth)
+    })
 
-}
+  }

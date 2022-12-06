@@ -32,7 +32,7 @@ state_chose <- selectInput(
   )
 )
 
-
+#redlining_slider <- 
 
 # Define UI for application that draws a histogram
 ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
@@ -148,12 +148,13 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
              
                       sidebarLayout(
                         sidebarPanel(
-                          selectInput(
-                            "party.choice",
-                            label = "Political party affiliation",
-                            choices = list(
-                              "Democratic", "Republican")
-                          )
+                         
+                          sliderInput("redlining_pct_pt_diff", "Redlining % Point Difference",
+                                      min = -0.2, max = 0.5,
+                                      value = c(-0.2, 0.5),
+                          ),
+                          #plotlyOutput("redlining_slider")
+                          
                         ),
                         mainPanel(
                           h1("Internet Redlining by State"),

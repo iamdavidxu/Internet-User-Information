@@ -30,13 +30,13 @@ colnames(fiber_in_state) [2] <- "Internet_Type"
 
 
 #adding column of non-NA state party affiliations
-party_affiliation <- c("Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Swing", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Republican", "Democratic", "Democratic", "Swing", "Republican", "NA")
+#party_affiliation <- c("Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Swing", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Democratic", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Democratic", "Democratic", "Republican", "Republican", "Republican", "Democratic", "Republican", "Democratic", "Democratic", "Swing", "Republican", "NA")
 
-redlining_speed <- redlining_speed %>%
-  mutate(
-    redlining_speed, "Party Affiliation" = party_affiliation
+#redlining_speed <- redlining_speed %>%
+#  mutate(
+#    redlining_speed, "Party Affiliation" = party_affiliation
     
-  )
+#  )
 
 
 

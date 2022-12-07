@@ -19,8 +19,8 @@
   library(tidyverse)
   library(scales)
   
-  att <- read.csv("../data/speed_price_att.csv.gz")
-  att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
+  att <- read.csv("../datacopy/speed_price_att.csv.gz")
+  att_other <- read.csv("../datacopy/speed_price_att_other_cities.csv.gz")
   att_total <- full_join(att, att_other) %>% 
     filter(median_household_income > 0)
 

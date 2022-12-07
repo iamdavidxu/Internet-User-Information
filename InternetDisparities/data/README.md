@@ -1,24 +1,17 @@
 # The `\data` Directory: Project Data Summary 
 
-In our project, we use the following data files and Application Programming Interfaces:
+In our project, we use the following data files and Application Programming Interfaces. Our datasets are actually much bigger, but because we ran into issues with our Shiny, we had to trim them down in order for them to work:
 
-## Data files (TODO: Update/delete for your PROJECT)
+## Data files )
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
+|[att_updated.csv](./InternetDisparities/Data/att_updated.csv) | This file contains data on AT&T internet speeds and prices. (See report for details.)
+|[fiber_in.csv](./InternetDisparities/Data/fiber_in.csv) | This file contains data on the number of types of internet per state.
+|[updated_att_price.csv](./InternetDisparities/Data/updated_att_price.csv) | This file contains data on the prices that AT&T offers specifically.
+|[table1_disparities_by_city.csv](./InternetDisparities/Data/table1_disparities_by_city.csv) | This file contains information on demographic breakdowns and disparities for each city.
 
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
-* **New York Times Books API**. The _New York Times_ provides data for Best
-Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
+* **Kaggle Dataset**.  _Kaggle_ is where we sourced all our data from. data for
+[Kaggle dataset]([https://developer.nytimes.com/docs/books-product/1/overview](https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices)).
 
-# Developer notes: About the `/data` Directory (TODO: Read and delete this section)
-
-* Use the `/data` directory to store any data that you using in your project (for example, CSV files)
-* Edit this `README.md` file and summarize your data files
-* If you are using APIs to access data, summarize them, providing specific information
-* See examples above.
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)

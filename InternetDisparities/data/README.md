@@ -13,5 +13,5 @@ In our project, we use the following data files and Application Programming Inte
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
 * **Kaggle Dataset**.  _Kaggle_ is where we sourced all our data from. data for
-[Kaggle dataset]([https://developer.nytimes.com/docs/books-product/1/overview](https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices)).
+[Kaggle dataset]([https://developer.nytimes.com/docs/books-product/1/overview](https://www.kaggle.com/datasets/michaelbryantds/internet-speeds-and-prices]).
 

@@ -5,10 +5,10 @@ account: aidanbartlett0
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7840161
-bundleId: 6606465
+bundleId: 6606645
 url: https://aidanbartlett0.shinyapps.io/InternetInformation/
-when: 1670441029.76019
-lastSyncTime: 1670441029.76021
+when: 1670443009.1743
+lastSyncTime: 1670443009.17431
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .RData|docs/hello.html|docs/index.html|docs/index.Rmd|docs/p01-proposal.md|docs/README.md|instructions/p01-proposal-requirements.md|instructions/project-design-brief.pdf|instructions/README.md

@@ -3,8 +3,8 @@
 ## DATA
 ## I pushed the cvs files on github repo, run the line and click on the file to read it :).
 
-ATT_price <- read.csv("data/speed_price_att.csv.gz")
-
+#ATT_price <- read.csv("data/speed_price_att.csv.gz")
+ATT_price <- read.csv("data/updated_att_price.csv")
 
 
 ## Packages

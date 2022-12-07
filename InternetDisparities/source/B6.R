@@ -1,15 +1,12 @@
 library(tidyverse)
 library(plotly)
 
-att <- read.csv("../data/speed_price_att.csv.gz")
-att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
+att <- read.csv("data/speed_price_att.csv.gz")
+att_other <- read.csv("data/speed_price_att_other_cities.csv.gz")
 att_total <- full_join(att, att_other)
 
 all <- att_total %>% 
   filter(median_household_income > 0)
-
-all_WA <- filter(all, state == "WA") %>% 
-  filter(median_household_income < 250000)
 
 fiber_in_state <- att_total %>% group_by(state) %>% 
   count(tolower(technology)) %>% 

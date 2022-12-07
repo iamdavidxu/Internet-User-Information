@@ -3,7 +3,7 @@
 ## DATA
 ## I pushed the cvs files on github repo, run the line and click on the file to read it :).
 
-ATT_price <- read.csv("../data/speed_price_att.csv.gz")
+ATT_price <- read.csv("data/speed_price_att.csv.gz")
 
 
 
@@ -27,9 +27,7 @@ Max_upload_speed_ATT <- ATT_price %>%
   pull(speed_up)
 
 
-Income_ATT <- ATT_price %>% 
-  mutate(location = paste0(ATT_price$major_city , ", " , ATT_price$state)) %>% 
-  summarise(location, income_dollars_below_median)
+
 
 ATT_price <- ATT_price %>%
   mutate(location = paste0(incorporated_place,", ", major_city , ", " , state))
@@ -50,4 +48,15 @@ lowest_speed_in_non_white_location_ATT <- ATT_price %>%
   summarise(location = unique(location) , 
             race_perc_non_white = unique(race_perc_non_white) , 
             speed = unique(speed_down))
+
+Income_ATT <- ATT_price %>% 
+  mutate(location = paste0(ATT_price$major_city , ", " , ATT_price$state)) %>% 
+  summarise(location, income_dollars_below_median, price) %>% 
+  na.omit()
+
+  poor_families <- Income_ATT %>% 
+  filter(income_dollars_below_median < 0 , price > 54) %>% 
+  summarise(income_dollars_below_median)
+  
+count<- nrow(poor_families)
 

@@ -20,11 +20,6 @@
   library(tidyverse)
   library(scales)
   
-  att <- read.csv("../data/speed_price_att.csv.gz")
-  att_other <- read.csv("../data/speed_price_att_other_cities.csv.gz")
-  att_total <- full_join(att, att_other) %>% 
-    filter(median_household_income > 0)
-
   build_scatter <- function(data, race_perc){
     data <- data %>% filter(race_perc_non_white >= race_perc[1] & race_perc_non_white <= race_perc[2])
     

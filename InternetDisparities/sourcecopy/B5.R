@@ -1,4 +1,7 @@
-  speed <- c(125.96640, 109.58667, 94.31361, 68.69142, 
+  library(tidyverse)
+  library(ggplot2)
+  library(plotly)
+speed <- c(125.96640, 109.58667, 94.31361, 68.69142, 
              37.76891, 26.76897, 210.61320, 209.82366)
   
   up_or_down <- c("down","up","down","up",
@@ -16,11 +19,10 @@
     scale_fill_discrete(name = "Type of Speed", labels = c("Download", "Upload"))
   ISP_Speeds_plot <- ggplotly(ISP_Speeds_plot)
 
-  library(tidyverse)
   library(scales)
   
-  att <- read.csv("../datacopy/speed_price_att.csv.gz")
-  att_other <- read.csv("../datacopy/speed_price_att_other_cities.csv.gz")
+  att <- read.csv("datacopy/speed_price_att.csv.gz")
+  att_other <- read.csv("datacopy/speed_price_att_other_cities.csv.gz")
   att_total <- full_join(att, att_other) %>% 
     filter(median_household_income > 0)
 

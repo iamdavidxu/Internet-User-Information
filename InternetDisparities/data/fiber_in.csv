@@ -1,0 +1,61 @@
+state,Internet_Type,n
+AL,,1713
+AL,fiber,3869
+AL,not fiber,649
+AR,,585
+AR,fiber,3476
+AR,not fiber,2776
+CA,,12989
+CA,fiber,12135
+CA,not fiber,23212
+FL,,4961
+FL,fiber,12997
+FL,not fiber,12765
+GA,,2304
+GA,fiber,7712
+GA,not fiber,2903
+IL,,19082
+IL,fiber,11556
+IL,not fiber,30590
+IN,,1656
+IN,fiber,5386
+IN,not fiber,9348
+KS,,1891
+KS,fiber,6279
+KS,not fiber,5617
+KY,,842
+KY,fiber,5670
+KY,not fiber,3080
+LA,,8405
+LA,fiber,3071
+LA,not fiber,4995
+MI,,4976
+MI,fiber,3162
+MI,not fiber,18279
+MO,,3059
+MO,fiber,2375
+MO,not fiber,13074
+MS,,716
+MS,fiber,567
+MS,not fiber,3252
+NC,,4847
+NC,fiber,15225
+NC,not fiber,4491
+OH,,5562
+OH,fiber,10220
+OH,not fiber,25647
+OK,,3272
+OK,fiber,8350
+OK,not fiber,8601
+SC,,850
+SC,fiber,1445
+SC,not fiber,2404
+TN,,4440
+TN,fiber,10460
+TN,not fiber,13310
+TX,,5262
+TX,fiber,31227
+TX,not fiber,21804
+WI,,2029
+WI,fiber,6912
+WI,not fiber,7563

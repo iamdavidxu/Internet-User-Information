@@ -20,6 +20,8 @@
   library(tidyverse)
   library(scales)
   
+  att_total <- read.csv("data/att_updated.csv")
+  
   build_scatter <- function(data, race_perc){
     data <- data %>% filter(race_perc_non_white >= race_perc[1] & race_perc_non_white <= race_perc[2])
     

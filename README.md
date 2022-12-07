@@ -7,7 +7,6 @@
 
 |Project Directories | Brief Description|
 |---------------| -----------------|
-
 |[`/InternetDisparities`](./InternetDisparities) | Because of issues with our Shiny, we had to move all files to the same directory as project.app which ran our Shiny.
 |[`/data`](./InternetDisparities/data) | All project datasets should be stored and documented here. For example, if you work with Common Separated Value (.cvs) datasets, they would stored here and documented in this directory's README.md file. Similarly, if you get data from web APIs, you would document the APIs in the directory's `README.md`.
 |[`/docs`](./InternetDisparities/docs) | All project reports and web documents will be published from this directory. This includes Markdown files (.md), R Markdown files (.Rmd),   HTML files (.html), and so on. The `./docs` directory is the root directory of the website for your project. It will also be used to store all of your design work and project documentation.|

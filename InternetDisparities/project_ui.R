@@ -167,7 +167,7 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
              ), 
              tabPanel("Summary", 
                       mainPanel(
-                        plotOutput("speed_chart"),
+                        plotlyOutput("speed_chart"),
                         p("This chart is a bar chart that, based on who the provider is, shows the 
                           average upload and download speed across all the data we have. This chart is 
                           also interactive, when you hover over each column, you can see the exact upload 

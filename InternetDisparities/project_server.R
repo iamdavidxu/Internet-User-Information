@@ -54,9 +54,8 @@ server <- function(input, output){
   output$race_scatter <- renderPlot({
     return(build_scatter(att_total, input$race_perc))
   })
-  
   output$redlining_map <- renderPlotly({
     return(plot_choropleth)
-    })
+  })
 
   }

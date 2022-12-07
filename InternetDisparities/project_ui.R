@@ -203,7 +203,11 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                           h4("INFO-201:Technical foundations of Informatics - The Information School - University of Washington"),
                           h4("Autumn 2022"),
                           h2("Abstract"),
-                          p("Our main question is 'How do speed disparities in internet service offers relate to socioeconomic disparities?‘ We are interested in answering this question to explore the effects of practices like redlining on our Internet service. To address this question, we will investigate the connections between internet speeds and service prices, and various neighborhoods with different races, incomes, and population distributions."),
+                          p("Our main question is 'How do internet service providers contribute to socioeconomic disparities?‘ 
+                            We are interested in answering this question to explore the effects of practices like redlining 
+                            and upcharging by internet service providers, specifically AT&T. To address this question, we will 
+                            investigate the relationships between internet speeds and service prices, and the relationships 
+                            between the price of internet and the race makeup and income of certain areas."),
                           h2("Keywords"),
                           p("Internet, Redlining, Income distributions, Regression, Exploratory data analysis, Upcharging"),
                           h2("Introduction"),
@@ -224,13 +228,11 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                              Influence on other fields:
                              This dataset can be used in political studies, social studies, and many other fields. When preparing for elections or political events, this data could be a good reference for creating promotion strategies to gather votes. It could also be used by the government to determine which area to develop in the future."),
                           h2("Research questions"),
-                          p("1. Which neighborhoods in Seattle are offered the worst Internet deals? Considering what this dataset revealed about the disparities in internet services based on redlining and the history of redlining and socioeconomic disparities in Seattle, it would be interesting to investigate how internet service discrimination occurs in our city."),
-
-                          p("2. How does the disparity in internet speed reflect the economy and social inequality between white and minorities? The increased demand for the internet deteriorates the economic gap between different social classes and communities. Unemployment significantly increases due to the pandemic which keeps high-income groups and reduces the number of low-income employees."),
-
-                          p("3. To what extent do internet speed disparities in different regions increase the social gap and economic inequality? As the pandemic hits, the demand for more efficient internet access and usage increases. However as the economy deteriorates, the accessibility to the internet becomes undetermined."),
-
-                          p("4. How does the price of the internet vary across America as a whole: are rural areas more expensive than cities or do redlined areas in cities cause the average price per city to stay higher? This information will reveal just how impactful redlining is to the average cost of living in a city and specifically internet prices."),
+                          p("1. Do internet service providers charge more for internet based on race and/or income?"),
+                          
+                          p("2. What types of Internet are most often used, and what are the implications of usage of those types?"),
+                          
+                          p("3. How are different areas across the country impacted by internet redlining practices?"),
                           
                           h2("The Dataset"),
                           p("Our dataset summarizes the disparities in internet service speeds and prices in different neighborhoods based on racial and economic makeup as well as redlining status. The connections presented in these datasets inform us on how big-name internet service providers disproportionately offer slower internet services to lower-income, BIPOC communities for the same price as faster services in higher-income communities with more white populations."),

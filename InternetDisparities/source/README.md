@@ -5,14 +5,8 @@ these sub-directories (TODO: Update/Delete)
 
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
-|[xxx](./xxx) | Description ... 
-
-
-# DEVELOPER NOTE 1: About ... 
-* All source code for your projects should go in the `/source` directory
-* To organize your code, you might decide to create sub-directories
-* If you use sub-directories, plese briefly describe them in the table above
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete this NOTE sections (which are intended for you, of course, not your audience!)
+|[B2](./InternetDisparities/source/B2.R) | This file contains our code for the summary data table. 
+|[B3](./InternetDisparities/source/B3.R) | This file contains our summary data table. 
+|[B4](./InternetDisparities/source/B4.R) | This file contains our choropleth map data visualization. 
+|[B5](./InternetDisparities/source/B5.R) | This file contains our scatterplot data visualization.
+|[B6](./InternetDisparities/source/B6.R) | This file contains our pie chart data visualization. 

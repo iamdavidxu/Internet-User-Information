@@ -148,8 +148,15 @@ ui <- shinyUI(fluidPage(theme = shinytheme("superhero"),
                         mainPanel(
                           h1("Internet Redlining by State"),
                           plotlyOutput("redlining_map"),
-                          p("This data visualization includes a choropleth map that displays the percentage point difference of lower income areas across the country with slower internet speeds. This chart allows users to visualize the overall impacts of internet redlining across the country through a scale of redlining grades represented by varying shades of blue. A lighter shade of blue represents less internet redlining, whereas a darker shade represents a higher level of internet redlining and grey represents areas where the data was NA.")
+                          p("This data visualization includes a choropleth map that displays the percentage point 
+                            difference of lower income areas across the country with slower internet speeds. 
+                            This chart allows users to visualize the overall impacts of internet redlining across the 
+                            country through a scale of redlining grades represented by varying shades of blue. 
+                            A lighter shade of blue represents less internet redlining, whereas a darker shade 
+                            represents a higher level of internet redlining and grey represents areas where the data 
+                            was NA.")
                         )
+                
                       ),
                       
                      

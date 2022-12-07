@@ -41,9 +41,8 @@ plot_choropleth <- plot_choropleth + geom_polygon(data = merged_disparities,
                                                   aes(x=long, y=lat, group=group, fill = redlining_pct_pt_diff), 
                                                   color="white", size = 0.2) +
   theme_minimal() +
-  ggtitle("Percentage Point Difference of Lower Income Areas with Slower Internet Speeds")+
+  ggtitle("States Based on Redlined Areas with Slow Internet Speeds")+
   labs(x = "Longitude", y = "Latitude", caption = "This is a choropleth map that displays the percentage point difference of lower income areas in major cities in each state with slow internet speeds.")+
-  scale_fill_continuous(name="Percentage Point Difference of Lower Income Areas With Slow Internet", 
+  scale_fill_continuous(name="Percentage Point Difference", 
                         low = "lightblue", high = "darkblue",limits = c(-0.2, 0.5), 
-                        breaks = c(-0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5), na.value = "grey")
-
+                        breaks = c(-0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5), na.value = "grey") 
